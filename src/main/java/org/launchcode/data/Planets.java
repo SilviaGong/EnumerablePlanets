@@ -11,17 +11,21 @@ public enum Planets {
     NEPTUNE("Neptune",60200);
     private final String displayName;
     private final int yearLength;
-
     Planets(String displayName, int yearLength) {
         this.displayName = displayName;
         this.yearLength = yearLength;
     }
-
     public String getDisplayName() {
         return displayName;
     }
-
     public int getYearLength() {
         return yearLength;
+    }
+    @Override
+    public String toString() {
+        return "Planets{" +
+                "displayName='" + displayName + '\'' +
+                ", yearLength=" + yearLength +
+                '}';
     }
 }
